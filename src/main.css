@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  padding: 40px;
+}
+
+button {
+  cursor: pointer;
+}
+
+li.todo-item.completed .todo-txt {
+  text-decoration: line-through;
+}
+
+.todo-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.todo-txt {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.todo-item {
+  padding: 10px;
+  background-color: #efefef;
+  margin-bottom: 10px;
+}
+
+.todo-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item .actions button {
+  border: 0;
+  outline: none !important;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.todo-item .actions button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.btn-complete {
+  background-color: #7765e3;
+  color: #fff;
+  min-width: 120px;
+}
+
+.btn-delete {
+  background-color: #f25f5c;
+  color: #fff;
+}
+
+.form-control {
+  padding: 10px;
+  margin-right: 10px;
+  width: 100%;
+  max-width: 700px;
+}
+
+form button {
+  width: 70px;
+  padding: 10px 15px;
+  border: 1px solid #7765e3;
+  background-color: #7765e3;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.filters {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.filter-item label {
+  text-transform: capitalize;
+  padding: 6px 10px;
+  display: inline-block;
+  background-color: #efefef;
+  border-radius: 50px;
+  font-size: 14px;
+  min-width: 40px;
+  cursor: pointer;
+}
+
+.filter-item input[type="radio"] {
+  position: absolute;
+  left: -100%;
+}
+
+.filter-item input[type="radio"]:checked + label {
+  background-color: #7765e3;
+  color: #fff;
+}
